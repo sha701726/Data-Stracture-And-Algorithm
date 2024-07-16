@@ -1,4 +1,6 @@
-Selection sort is a simple comparison-based sorting algorithm. Here's a detailed explanation:
+##Selection Sort Ovreview
+
+Selection sort is a comparison-based sorting algorithm that divides the list into a sorted and an unsorted sublist. It repeatedly selects the smallest (or largest) element from the unsorted sublist and swaps it with the leftmost unsorted element, gradually building the sorted sublist.
 
 ### How Selection Sort Works
 
