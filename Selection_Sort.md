@@ -1,12 +1,12 @@
-##Selection Sort Ovreview
+# Selection Sort: An Overview :
 
 Selection sort is a comparison-based sorting algorithm that divides the list into a sorted and an unsorted sublist. It repeatedly selects the smallest (or largest) element from the unsorted sublist and swaps it with the leftmost unsorted element, gradually building the sorted sublist.
 
-### How Selection Sort Works
+## How Selection Sort Works
 
 Selection sort works by dividing the input list into two parts: a sorted sublist of items which is built up from left to right at the front (left) of the list, and a sublist of the remaining unsorted items. Initially, the sorted sublist is empty, and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest (or largest, depending on the order) element from the unsorted sublist, swapping it with the leftmost unsorted element (putting it in sorted order), and moving the sublist boundaries one element to the right.
 
-### Steps of the Algorithm
+## Steps of the Algorithm
 
 1. **Initialize** the sorted sublist as empty and the unsorted sublist as the entire list.
 2. **Find the minimum (or maximum)** element in the unsorted sublist.
@@ -39,34 +39,34 @@ Let's sort the list [64, 25, 12, 22, 11]:
 5. Find the minimum element in the remaining unsorted sublist [25, 64], which is 25, and it is already in the correct position: [11, 12, 22, 25, 64]
 6. The list is now sorted.
 
-### Time Complexity
+## Time Complexity
 
 **Best case**: O(n^2)
 **Average case**: O(n^2)
 **Worst case**: O(n^2)
 
-### Space Complexity
+## Space Complexity
 
 **Auxiliary Space**: O(1) (Selection sort is an in-place sorting algorithm)
 
-### Characteristics
+## Characteristics
 
 **In-place**: Yes, it does not require extra storage space.
 **Stable**: No, selection sort is not stable. Equal elements might not maintain their relative order.
 **Adaptive**: No, selection sort does not adapt to the input.
 
-### Practical Use
+## Practical Use
 
 Selection sort is not suitable for large datasets as it has a time complexity of O(n^2). It is often used when the list is small or when the cost of swapping elements is low.
 
-### Comparison with Other Sorting Algorithms
+## Comparison with Other Sorting Algorithms
 
 **Bubble Sort**: Both have a time complexity of O(n^2), but bubble sort repeatedly swaps adjacent elements and is often considered less efficient than selection sort.
 **Insertion Sort**: Also O(n^2) in the average and worst cases, but it is more efficient for nearly sorted data.
 **Quick Sort and Merge Sort**: More efficient for large datasets with average time complexities of O(n log n).
 
 
-### Here is a simple C++ program that implements the selection sort algorithm:
+## Here is a simple C++ program that implements the selection sort algorithm:
 
 ```cpp
 #include <iostream>
