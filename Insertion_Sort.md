@@ -66,7 +66,8 @@ for i = 1 to length(A) - 1
     while j >= 0 and A[j] > key
         A[j + 1] = A[j]
         j = j - 1
-    A[j + 1] = key```
+    A[j + 1] = key
+```
 
 ## Advantages
 
@@ -197,4 +198,5 @@ int main() {
 When you run this program, you will see:
 ```markdown
 Original array: 12 11 13 5 6 
-Sorted array: 5 6 11 12 13 ```
+Sorted array: 5 6 11 12 13
+```
